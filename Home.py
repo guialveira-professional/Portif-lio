@@ -44,6 +44,8 @@ with st.sidebar:
     st.markdown(
         """<h2 style='text-align: justify; color: white;'>E-mail</h2>
         <div style="text-align: justify;">guialveira@outlook.com</div>
+        <h2 style='text-align: justify; color: white;'>Phone number</h2>
+        <div style="text-align: justify;">+55 11 964308031</div>
         <h2 style='text-align: justify; color: white;'>Links</h2>
         <a href="https://github.com/guialveira-professional" target="_blank">GitHub</a>
         """,
