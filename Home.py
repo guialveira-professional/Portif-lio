@@ -9,7 +9,7 @@ from navigation.talk_to_me import talktome
 st.set_page_config(page_title= "Guilherme Alves de Oliveira",
                    initial_sidebar_state="expanded",
                    layout='wide',
-                   page_icon='imagens/Imagem_pessoal.jpeg')
+                   page_icon='imagens/pessoal.jpeg')
 
 def roll_page():
     # Definição barra de navegação
