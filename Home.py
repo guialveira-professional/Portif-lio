@@ -33,7 +33,7 @@ def roll_page():
 
 
 with st.sidebar:
-    st.image("imagens\Imagem_pessoal.jpeg")
+    st.image("imagens\pessoal.jpeg")
     st.title("Guilherme")
     st.markdown("""<div style="text-align: justify;">Welcome to my portfolio! It's a pleasure to have you here</div>
                 <div style="text-align: justify;">I'm a data professional with a passion in machine learning and deep learning for classification, regression and computer vision. Soon I'll post some LLM projects. </div>
