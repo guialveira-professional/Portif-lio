@@ -13,7 +13,7 @@ st.set_page_config(page_title= "Guilherme Alves de Oliveira",
 
 def roll_page():
     # Definição barra de navegação
-    TALKTOME = "imagens/talktome_ico.png"
+    TALKTOME = "imagens/talktome_ico.jpg"
     ESTATISTICA = "imagens\Statistics_ico.jpg"
     ML = "imagens\ML_ico.jpg"
     VISION = "imagens\Computer_vision_ico.jpg"
