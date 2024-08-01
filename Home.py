@@ -9,7 +9,7 @@ from navigation.talk_to_me import talktome
 st.set_page_config(page_title= "Guilherme Alves de Oliveira",
                    initial_sidebar_state="expanded",
                    layout='wide',
-                   page_icon='imagens/pessoal.jpeg')
+                   page_icon='imagens/pessoal.png')
 
 def roll_page():
     # Definição barra de navegação
@@ -33,7 +33,7 @@ def roll_page():
 
 
 with st.sidebar:
-    st.image("imagens\pessoal.jpeg")
+    st.image("imagens\pessoal.png")
     st.title("Guilherme")
     st.markdown("""<div style="text-align: justify;">Welcome to my portfolio! It's a pleasure to have you here</div>
                 <div style="text-align: justify;">I'm a data professional with a passion in machine learning and deep learning for classification, regression and computer vision. Soon I'll post some LLM projects. </div>
