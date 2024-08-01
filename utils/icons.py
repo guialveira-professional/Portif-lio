@@ -84,3 +84,11 @@ class icons:
         with self.col2:
             st.markdown("")
             st.markdown("""<h5 style='text-align: justify; color: white;'>Scipy</h2>""", unsafe_allow_html=True)
+
+    def tensorflow(self):
+        self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
+        with self.col1:
+            st.image("imagens\ico_tensorflow.png", width=55)
+
+        with self.col2:
+            st.markdown("""<h5 style='text-align: justify; color: white;'>Tensor Flow</h2>""", unsafe_allow_html=True)
