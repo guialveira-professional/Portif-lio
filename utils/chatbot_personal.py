@@ -28,7 +28,7 @@ def chatbot(prompt):
     load_dotenv()
 
     # Step 1
-    raw_documents = PDFMinerLoader("docs\CV automation.pdf").load()
+    raw_documents = PDFMinerLoader("docs/CV automation.pdf").load()
 
     # Step 2
     text_splitter = RecursiveCharacterTextSplitter(
