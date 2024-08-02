@@ -32,14 +32,14 @@ def chatbot(prompt):
     raw_documents = PDFMinerLoader("docs/guilherme.pdf").load()
 
     # Step 2
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=100, chunk_overlap=20, length_function=len
-    )
-    documents = text_splitter.split_documents(raw_documents)
+    #text_splitter = RecursiveCharacterTextSplitter(
+        #chunk_size=100, chunk_overlap=20, length_function=len
+    #)
+    #documents = text_splitter.split_documents(raw_documents)
 
     # Step 3
     embeddings_model = OpenAIEmbeddings(api_key=st.secrets["OPENAI_API_KEY"])
-    db = FAISS.from_documents(documents, embeddings_model)
+    db = FAISS.from_documents(raw_documents, embeddings_model)
 
     # Step 4
     retriever = db.as_retriever()
