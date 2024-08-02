@@ -14,10 +14,10 @@ st.set_page_config(page_title= "Guilherme Alves de Oliveira",
 def roll_page():
     # Definição barra de navegação
     TALKTOME = "imagens/talktome_ico.jpg"
-    ESTATISTICA = "imagens\Statistics_ico.jpg"
-    ML = "imagens\ML_ico.jpg"
-    VISION = "imagens\Computer_vision_ico.jpg"
-    DL = "imagens\DL_ico.jpg"
+    ESTATISTICA = "imagens/Statistics_ico.jpg"
+    ML = "imagens/ML_ico.jpg"
+    VISION = "imagens/Computer_vision_ico.jpg"
+    DL = "imagens/DL_ico.jpg"
     chosen_tab = image_select("", [TALKTOME, ESTATISTICA, ML, VISION, DL],
                             captions= ["TALK TO ME","STATISTICS", "MACHINE LEARNING", "COMPUTER VISION", "DEEP LEARNING" ],
                             use_container_width=False)
