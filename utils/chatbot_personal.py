@@ -29,7 +29,7 @@ def chatbot(prompt):
     load_dotenv()
 
     # Step 1
-    raw_documents = PDFMinerLoader("docs/CV automation.pdf").load()
+    raw_documents = PDFMinerLoader("docs/guilherme.pdf").load()
 
     # Step 2
     text_splitter = RecursiveCharacterTextSplitter(
@@ -38,7 +38,7 @@ def chatbot(prompt):
     documents = text_splitter.split_documents(raw_documents)
 
     # Step 3
-    embeddings_model = OpenAIEmbeddings(api_key=st.secrets["OPENAI_API_KEY"])
+    embeddings_model = OpenAIEmbeddings()#st.secrets["OPENAI_API_KEY"]
     db = FAISS.from_documents(documents, embeddings_model)
 
     # Step 4
@@ -48,7 +48,9 @@ def chatbot(prompt):
     llm_src = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-16k",max_tokens= 300)
 
     # Define your system instruction
-    system_instruction = "You are a personal RAG designed to intoduce Guilherme to recruiters"
+    system_instruction = """You are a personal RAG designed to intoduce Guilherme to recruiters.
+                        You must answer using only data about Guilherme Alves de Oliveira
+                        If you judge the question is not about the provided context respond with 'I don't have this information' in the respective asked language"""
 
 # Define your template with the system instruction
     template = (
