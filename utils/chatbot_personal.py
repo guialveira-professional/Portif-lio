@@ -45,7 +45,7 @@ def chatbot(prompt):
     retriever = db.as_retriever()
 
     # Step 5
-    llm_src = ChatOpenAI(temperature=1, model="gpt-3.5-turbo-16k",max_tokens= 300)
+    llm_src = ChatOpenAI(temperature=1, model="gpt-3.5-turbo-16k",max_tokens= 500)
 
     # Define your system instruction
     system_instruction = """You are a personal RAG designed to intoduce Guilherme to recruiters.
