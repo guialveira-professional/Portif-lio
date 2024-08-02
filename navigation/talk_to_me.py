@@ -18,8 +18,6 @@ def talktome():
 
         st.session_state.messages.append({"role": "user", "content": prompt})
         st.chat_message("user").write(prompt)
-        querry_engine = chatbot()
-        response = querry_engine.query(str(st.session_state.messages))
-        msg = response.response
-        st.session_state.messages.append({"role": "assistant", "content": msg})
+        answer = chatbot(str(st.session_state.messages))
+        st.session_state.messages.append({"role": "assistant", "content": answer})
         st.chat_message("assistant").write(msg)
