@@ -7,7 +7,7 @@ class icons:
 
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_python.jpg", width=55)
+            st.image("imagens/ico_python.jpg", width=55)
 
         with self.col2:
             st.markdown("")
@@ -16,7 +16,7 @@ class icons:
     def pandas(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_pandas.jpg", width=55)
+            st.image("imagens/ico_pandas.jpg", width=55)
 
         with self.col2:
             st.markdown("")
@@ -25,7 +25,7 @@ class icons:
     def yahoo_finance(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_yahoo_finance.jpg", width=55)
+            st.image("imagens/ico_yahoo_finance.jpg", width=55)
 
         with self.col2:
             
@@ -34,7 +34,7 @@ class icons:
     def bcb(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_BCB.jpg", width=55)
+            st.image("imagens/ico_BCB.jpg", width=55)
 
         with self.col2:
             st.markdown("")
@@ -43,7 +43,7 @@ class icons:
     def matplot(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_matplot.jpg", width=55)
+            st.image("imagens/ico_matplot.jpg", width=55)
 
         with self.col2:
             st.markdown("")
@@ -52,7 +52,7 @@ class icons:
     def scikit(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_scikit.jpg", width=55)
+            st.image("imagens/ico_scikit.jpg", width=55)
 
         with self.col2:
             st.markdown("")
@@ -61,7 +61,7 @@ class icons:
     def numpy(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_numpy.jpg", width=55)
+            st.image("imagens/ico_numpy.jpg", width=55)
 
         with self.col2:
             st.markdown("")
@@ -70,7 +70,7 @@ class icons:
     def seaborn(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_seaborn.jpg", width=55)
+            st.image("imagens/ico_seaborn.jpg", width=55)
 
         with self.col2:
             st.markdown("")
@@ -79,7 +79,7 @@ class icons:
     def scipy(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_scipy.jpg", width=55)
+            st.image("imagens/ico_scipy.jpg", width=55)
 
         with self.col2:
             st.markdown("")
@@ -88,7 +88,7 @@ class icons:
     def tensorflow(self):
         self.col1,self.col2,self.col3 = st.columns([0.5,1,1.3])
         with self.col1:
-            st.image("imagens\ico_tensorflow.jpg", width=55)
+            st.image("imagens/ico_tensorflow.jpg", width=55)
 
         with self.col2:
             st.markdown("""<h5 style='text-align: justify; color: white;'>Tensor Flow</h2>""", unsafe_allow_html=True)
