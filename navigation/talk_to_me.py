@@ -5,7 +5,7 @@ import requests
 def talktome():
     st.title("💬 Talk to me")
     st.subheader("You can ask me any question anonymously, and my RAG will answer you")
-    st.caption("Powered with Llama3")
+    st.caption("Powered with ChatGPT")
 
 
     if "messages" not in st.session_state:
