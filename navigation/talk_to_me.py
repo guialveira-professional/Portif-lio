@@ -20,4 +20,4 @@ def talktome():
         st.chat_message("user").write(prompt)
         answer = chatbot(str(st.session_state.messages))
         st.session_state.messages.append({"role": "assistant", "content": answer})
-        st.chat_message("assistant").write(msg)
+        st.chat_message("assistant").write(answer)
