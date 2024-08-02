@@ -38,7 +38,7 @@ def chatbot(prompt):
     documents = text_splitter.split_documents(raw_documents)
 
     # Step 3
-    embeddings_model = OpenAIEmbeddings()#st.secrets["OPENAI_API_KEY"]
+    embeddings_model = OpenAIEmbeddings(api_key=st.secrets["OPENAI_API_KEY"])
     db = FAISS.from_documents(documents, embeddings_model)
 
     # Step 4
