@@ -25,10 +25,11 @@ def chinese_digits():
     with col1:
         details = st.button("See more", key="chinese")
     with col2:
-        github = st.button("Github", key="chinese_git")
+        st.markdown("""<a href="https://github.com/guialveira-professional/Classificacao-de-imagem" target="_blank">Github</a>""",
+                unsafe_allow_html=True)
 
-    if github:
-        webbrowser.open_new_tab('https://github.com/guialveira-professional/Classificacao-de-imagem')
+    #if github:
+     #   webbrowser.open_new_tab('https://github.com/guialveira-professional/Classificacao-de-imagem')
     
     
     if details:

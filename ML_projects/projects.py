@@ -30,10 +30,11 @@ def space_titanic():
     with col1:
         details = st.button("See more", key="titanic")
     with col2:
-        github = st.button("Github", key="titanic_git")
+        st.markdown("""<a href="https://github.com/guialveira-professional/RandomForest_Hyperparameter_tunning" target="_blank">Github</a>""",
+                unsafe_allow_html=True)
 
-    if github:
-         webbrowser.open_new_tab('https://github.com/guialveira-professional/RandomForest_Hyperparameter_tunning')
+    #if github:
+     #    webbrowser.open_new_tab('https://github.com/guialveira-professional/RandomForest_Hyperparameter_tunning')
     
     
     if details:
@@ -76,10 +77,10 @@ def maintenance_classification():
     with col1:
         details = st.button("See more", key="maintenance")
     with col2:
-        github = st.button("Github",key = "maintenance_git")
-
-    if github:
-         webbrowser.open_new_tab('https://github.com/guialveira-professional/Maintenance')
+        st.markdown("""<a href="https://github.com/guialveira-professional/Maintenance" target="_blank">Github</a>""",
+                unsafe_allow_html=True)
+   # if github:
+    #     webbrowser.open_new_tab('https://github.com/guialveira-professional/Maintenance')
 
     
     if details:

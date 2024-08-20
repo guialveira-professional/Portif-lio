@@ -25,7 +25,7 @@ def financial_analyst():
     with col1:
         details = st.button("See more", key="financial")
     with col2:
-         st.markdown("""<a href="https://www.linkedin.com/in/guilherme-alves-de-oliveira-914149258/" target="_blank">LinkedIn</a>""",
+         st.markdown("""<a href="https://github.com/guialveira-professional/Financial-Analist" target="_blank">Github</a>""",
                 unsafe_allow_html=True)
 
    # if github:
@@ -66,7 +66,7 @@ def outlier_detection():
     with col1:
         details = st.button("See more", key="outlier")
     with col2:
-         st.markdown("""<a href="https://www.linkedin.com/in/guilherme-alves-de-oliveira-914149258/" target="_blank">LinkedIn</a>""",
+         st.markdown("""<a href="https://github.com/guialveira-professional/Statistics_time_series" target="_blank">Github</a>""",
                 unsafe_allow_html=True)
 
     #if github:
