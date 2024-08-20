@@ -13,17 +13,17 @@ st.set_page_config(page_title= "Guilherme Alves de Oliveira",
 
 def roll_page():
     # Definição barra de navegação
-    TALKTOME = "imagens/talktome_ico.jpg"
+    #TALKTOME = "imagens/talktome_ico.jpg"
     ESTATISTICA = "imagens/Statistics_ico.jpg"
     ML = "imagens/ML_ico.jpg"
     VISION = "imagens/Computer_vision_ico.jpg"
     DL = "imagens/DL_ico.jpg"
-    chosen_tab = image_select("", [TALKTOME, ESTATISTICA, ML, VISION, DL],
-                            captions= ["TALK TO ME","STATISTICS", "MACHINE LEARNING", "COMPUTER VISION", "DEEP LEARNING" ],
+    chosen_tab = image_select("", [ESTATISTICA, ML, VISION, DL],
+                            captions= ["STATISTICS", "MACHINE LEARNING", "COMPUTER VISION", "DEEP LEARNING" ],
                             use_container_width=False)
     st.divider()
-    if chosen_tab == TALKTOME:
-        talktome()
+    #if chosen_tab == TALKTOME:
+     #   talktome()
     if chosen_tab == ESTATISTICA:
         statistics()
     if chosen_tab == ML:
@@ -36,8 +36,8 @@ with st.sidebar:
     st.image("imagens/pessoal.jpg")
     st.title("Guilherme")
     st.markdown("""<div style="text-align: justify;">Welcome to my portfolio! It's a pleasure to have you here</div>
-                <div style="text-align: justify;">I'm a data professional with a passion in machine learning and deep learning for classification, regression and computer vision. Soon I'll post some LLM projects. </div>
-                <div style="text-align: justify;">To know more about me click the button below or talk to my RAG on --TALK TO ME-- Tab</div>
+                <div style="text-align: justify;">I'm a data professional with a passion in machine learning and deep learning for classification, regression and computer vision. </div>
+                <div style="text-align: justify;">To know more about me click the button below </div>
                 """,
                 unsafe_allow_html=True)
     st.markdown("")
