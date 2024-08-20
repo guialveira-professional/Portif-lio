@@ -25,10 +25,11 @@ def financial_analyst():
     with col1:
         details = st.button("See more", key="financial")
     with col2:
-        github = st.button("Github", key="financial_git")
+         st.markdown("""<a href="https://www.linkedin.com/in/guilherme-alves-de-oliveira-914149258/" target="_blank">LinkedIn</a>""",
+                unsafe_allow_html=True)
 
-    if github:
-        webbrowser.open_new_tab('https://github.com/guialveira-professional/Financial-Analist')
+   # if github:
+    #    webbrowser.open_new_tab('https://github.com/guialveira-professional/Financial-Analist')
     
     
     if details:
@@ -65,10 +66,11 @@ def outlier_detection():
     with col1:
         details = st.button("See more", key="outlier")
     with col2:
-        github = st.button("Github",key = "outlier_git")
+         st.markdown("""<a href="https://www.linkedin.com/in/guilherme-alves-de-oliveira-914149258/" target="_blank">LinkedIn</a>""",
+                unsafe_allow_html=True)
 
-    if github:
-        webbrowser.open_new_tab('https://github.com/guialveira-professional/Statistics_time_series')
+    #if github:
+        #webbrowser.open_new_tab('https://github.com/guialveira-professional/Statistics_time_series')
 
     
     if details:
